@@ -12,9 +12,9 @@ public class ShopRepositoryTest {
         repo.add(product1);
         repo.add(product2);
         repo.add(product3);
-        repo.remove(5);
+        repo.remove(2);
         Product[] actual = repo.findAll();
-        Product[] expected = {product1, product2, product3};
+        Product[] expected = {product1, product3};
 
         Assertions.assertArrayEquals(expected, actual);
     }
